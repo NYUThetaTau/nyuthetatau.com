@@ -1,0 +1,394 @@
+body {
+  background-color: #eee;
+  color: #333333;
+  font-family: "Roboto";
+}
+
+.mdl-layout__header {
+  background: #fff;
+}
+
+.mdl-navigation {
+  text-transform: uppercase;
+}
+
+.header {
+  width: auto;
+  background: #f8f8f8;
+  margin-top: -25px;
+}
+
+.header img {
+  max-width: 100%;
+  background: #801c24;
+}
+
+.mdl-layout__drawer-button {
+  color: #111;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.mdl-layout__header-row .mdl-navigation__link:hover {
+  border-bottom: 3px solid #801c24;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+  color: #fff;
+  background: #801c24;
+}
+
+.description {
+  padding: 30px 20px 0px 20px;
+  background: white;
+}
+
+.section-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.75em;
+  padding-bottom: 10px;
+  color: #333333;
+}
+
+.rush {
+  background: white;
+  padding: 30px 20px 20px 20px;
+}
+
+.requirements {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-heading {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+video {
+  margin: 0 auto;
+  width: 560px;
+  height: 315px;
+  max-width: 100%;
+}
+
+.events {
+  width: auto;
+  background: white;
+  height: auto;
+  padding: 30px 30px 20px 30px;
+}
+
+.events img {
+  width: 100%;
+  background: #801c24;
+  height: 850;
+}
+
+
+.brothers {
+  width: auto;
+  background: #f8f8f8;
+  height: auto;
+  padding: 30px 30px 20px 30px;
+}
+
+.class-name {
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: 0;
+  letter-spacing: .1em;
+  color: #801c24;
+}
+
+hr {
+  margin: 0;
+}
+
+.name {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.position {
+  font-size: 0.8em;
+  display: block;
+}
+
+.portfolio {
+  .width: auto;
+  height: auto;
+  padding: 30px 0px 5px 0px;
+  background: white;
+}
+
+.pillars {
+  color: #444;
+}
+
+.full-roster {
+  background: #666666;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.full-roster:hover {
+  background: #444444;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.full-roster a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.full-roster a:hover {
+}
+
+.company-logo {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+}
+
+#portfolio span {
+  margin: auto;
+}
+
+.footer {
+  background-color: #212121;
+  width: auto;
+  height: auto;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer ul {
+  list-style: none;
+  display: inline;
+  text-align: center;
+  padding: 50px;
+}
+
+.footer ul li {
+  display: inline;
+}
+
+.footer ul li a {
+  padding: 10px;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s linear;
+  -webkit-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
+}
+
+.footer ul li a:hover {
+  color: #bbb;
+}
+
+.copyright {
+  padding-top: 15px;
+}
+
+.portrait {
+  max-width: 100%;
+}
+
+.mdl-portrait {
+  margin: 0 auto;
+  width: 250px;
+  max-width: 100%;
+}
+
+.bio {
+  font-size: 0.85em;
+}
+
+.mdl-dialog {
+  border: none;
+  box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  max-width: 80%;
+}
+  .mdl-dialog__title {
+    padding: 24px 24px 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #801c24;
+    text-transform: uppercase;
+  }
+  .mdl-dialog__actions {
+    padding: 8px 8px 8px 24px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .mdl-dialog__actions > * {
+      margin-right: 8px;
+      height: 36px; }
+      .mdl-dialog__actions > *:first-child {
+        margin-right: 0;
+         }
+    .mdl-dialog__actions--full-width {
+      padding: 0 0 8px 0; }
+      .mdl-dialog__actions--full-width > * {
+        height: 48px;
+        -webkit-flex: 0 0 100%;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        padding-right: 16px;
+        margin-right: 0;
+        text-align: right; }
+  .mdl-dialog__content {
+    padding: 20px;
+    color: rgba(0,0,0, 0.54); }
+
+* {box-sizing:border-box}
+.carousel {display:none}
+
+* {box-sizing:border-box}
+.carousel2 {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 2500px;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.eventsCaption {
+  color: #f2f2f2;
+  font-size: 24px;
+  padding: 8px 16px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: rgba(128,128,128,0.5);
+  text-align: left;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot2 {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+  .slideshow-container {margin-top:40px;}
+}
+
+#rosterbutton {
+  background-color: #801c24;
+}
+
+.linkedin {
+  background-color: #0077b5;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 2px 6px 0 rgba(0,0,0,0.1);
+}
