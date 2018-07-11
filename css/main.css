@@ -98,9 +98,16 @@ video {
 }
 
 
-.brothers {
+.brothers  {
   width: auto;
-  background: #f8f8f8;
+  background: white;
+  height: auto;
+  padding: 30px 30px 20px 30px;
+}
+
+.alumni {
+  width: auto;
+  background: white;
   height: auto;
   padding: 30px 30px 20px 30px;
 }
@@ -128,6 +135,16 @@ hr {
 .position {
   font-size: 0.8em;
   display: block;
+}
+
+.major {
+    font-size: 0.8em;
+    display: block;
+}
+
+.gradyear {
+    font-size: 0.8em;
+    display: block;
 }
 
 .portfolio {
