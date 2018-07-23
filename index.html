@@ -17,50 +17,26 @@
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title"><a href="#carousel"><img src="assets/logo.png" width="150" style="padding-top:10px;"></a></span>
+            <span class="mdl-layout-title"><a href="#cover"><img src="assets/logo.png" width="150" style="padding-top:10px;"></a></span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="#about">About</a>
                 <a class="mdl-navigation__link" href="#rush">Rush</a>
                 <a class="mdl-navigation__link" href="#events">Events</a>
-                <a class="mdl-navigation__link" href="#brotherhood">Brotherhood</a>
+                <a class="mdl-navigation__link" onclick="MemberDrop()">Members</a>
+                <div id="memberdrop" class="hide">
+                    <a class="mdl-navigation__link" href="#brotherhood">&emsp; Brothers</a>
+                    <a class="mdl-navigation__link" href="alumni.html">&emsp; Alumni</a>
+                </div> 
                 <a class="mdl-navigation__link" href="#portfolio">Portfolio</a>
                 <a class="mdl-navigation__link" href="#contact">Contact</a>
             </nav>
         </div>
 
         <main class="mdl-layout__content">
-            <div class="mdl-typography--text-center header" id="carousel">
-                <div class="slideshow-container">
 
-                    <div class="carousel fade">
-                        <img src="assets/carousel/image1.jpg" style="width:100%; transform: translateY(0.2);">
-                    </div>
 
-                    <div class="carousel fade">
-                        <img src="assets/carousel/image2.jpg" style="width:100%">
-                    </div>
-
-                    <div class="carousel fade">
-                        <img src="assets/carousel/image3.jpg" style="width:100%">
-                    </div>
-
-                    <div class="carousel fade">
-                        <img src="assets/carousel/image4.jpg" style="width:100%">
-                    </div>
-
-                    <div class="carousel fade">
-                        <img src="assets/carousel/image5.jpg" style="width:100%">
-                    </div>
-
-                    <div class="carousel fade">
-                        <img src="assets/carousel/image6.jpg" style="width:100%">
-                    </div>
-
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-
-                </div>
-
+            <div class="mdl-typography--text-center header" id="cover">
+                <img src="assets/home/2018cover.jpg" style="width:100%; opacity: 0.9;">
             </div>
 
             <div class="mdl-typography--text-center description" id="about">
@@ -513,28 +489,6 @@
                     <h2 class="class-name">Delta</h2>
                     <hr>
                     <div class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
-                            <div class="dialog-image" id="tate"><img src="assets/brothers/Tate_Ichiki.jpg" class="portrait">
-                                <span class="name">Tate Ichiki</span>
-                            </div>
-                            <dialog class="mdl-dialog dialog-tate">
-                                <h3 class="mdl-dialog__title">Tate Ichiki</h3> Fundraising Chair
-                                <div class="mdl-dialog__content">
-                                    <p>
-                                        <img src="assets/brothers/Tate_Ichiki.jpg" class="mdl-portrait">
-                                    </p>
-                                    <p class="bio">
-                                        Tate is currently a senior studying electrical engineering. In the future, she would like to work at the Nike Headquarters as a product developer. Her interests include golfing, reading, and Netflix.
-                                    </p>
-                                    <a class="linkedin" href="https://www.linkedin.com/in/tate-ichiki-154b31128/" target="_blank">
-                                      </i> LinkedIn
-                                    </a>
-                                </div>
-                                <div class="mdl-dialog__actions">
-                                    <button type="button" class="mdl-button">x</button>
-                                </div>
-                            </dialog>
-                        </div>
                         <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
                             <div class="dialog-image" id="ryan"><img src="assets/brothers/Ryan_Chan.jpg" class="portrait">
                                 <span class="name">Ryan Chan</span>
@@ -1191,51 +1145,51 @@
             <div class="mdl-typography--text-center portfolio" id="portfolio">
                 <div class="section-header">Portfolio</div>
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/aecom.jpg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/aecom.jpg" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/autodesk.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/autodesk.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><span><img src="assets/logos/barclays.jpg" class="company-logo"></span>
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><span><img src="assets/portfolio/barclays.jpg" class="company-logo"></span>
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/boa.jpeg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/boa.jpeg" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/conedison.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/conedison.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/cummins.png" height ="55" fdsclass="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/cummins.png" height ="55" fdsclass="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/ephemeral.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/ephemeral.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/facebook.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/facebook.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/goldman_sachs.jpg" height ="55" fdsclass="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/goldman_sachs.jpg" height ="55" fdsclass="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/ibm.jpg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/ibm.jpg" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/google.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/google.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/huawei.jpg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/huawei.jpg" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/jacobs.jpg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/jacobs.jpg" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/jpmorgan.jpg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/jpmorgan.jpg" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/lockheed_martin.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/lockheed_martin.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/microsoft.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/microsoft.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/mta.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/mta.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/nasa.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/nasa.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/northrop_grumman.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/northrop_grumman.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/ouvos.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/ouvos.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/tdbank.jpg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/tdbank.jpg" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/turner.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/turner.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/logos/warbyparker.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/warbyparker.png" class="company-logo">
                     </div>
                 </div>
             </div>
@@ -1259,8 +1213,8 @@
                         </li>
                     </ul>
                     <p class="copyright">
-                        &copy; 2018 NYU Theta Tau
-                    </p>
+                        &copy; 2018 NYU Theta Tau | <a href="http://thetatau.org/">Theta Tau Nationals
+</p>
                 </div>
             </section>
         </main>
@@ -1272,6 +1226,7 @@
     <script src="js/carousel2.js"></script>
     <script src="js/video-adjust.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/dropdown.js"></script>
 </body>
 
 </html>
