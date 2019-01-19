@@ -16,24 +16,45 @@
 
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title"><a href="#cover"><img src="assets/logo.png" width="150" style="padding-top:10px;"></a></span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="#about">About</a>
-                <a class="mdl-navigation__link" href="#rush">Rush</a>
-                <a class="mdl-navigation__link" href="#events">Events</a>
-                <a class="mdl-navigation__link" onclick="MemberDrop()">Members</a>
-                <div id="memberdrop" class="hide">
-                    <a class="mdl-navigation__link" href="#brotherhood">&emsp; Brothers</a>
-                    <a class="mdl-navigation__link" href="alumni.html">&emsp; Alumni</a>
-                </div>
-                <a class="mdl-navigation__link" href="#portfolio">Portfolio</a>
-                <a class="mdl-navigation__link" href="#contact">Contact</a>
-            </nav>
-        </div>
+      <div class="mdl-layout--small-screen-only mdl-layout__drawer">
+          <span class="mdl-layout-title"><a href="index.html#cover"><img src="./ttlogo.png" width="100" style="padding-top:10px;"></a></span>
+          <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="index.html#about">About</a>
+              <a class="mdl-navigation__link" href="index.html#rush">Rush</a>
+              <a class="mdl-navigation__link" href="index.html#events">Events</a>
+              <a class="mdl-navigation__link" onclick="MemberDrop()">Members</a>
+              <div id="memberdrop" class="hide">
+                  <a class="mdl-navigation__link" href="index.html#brothers">&emsp; Brothers</a>
+                  <a class="mdl-navigation__link" href="alumni.html">&emsp; Alumni</a>
+              </div>
+              <a class="mdl-navigation__link" href="index.html#portfolio">Portfolio</a>
+              <a class="mdl-navigation__link" href="#contact">Contact</a>
+          </nav>
+      </div>
 
         <main class="mdl-layout__content">
-
+          <header class="mdl-layout__header" style="min-height: 90px">
+            <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <span class="mdl-layout-title"><img src="./ttlogo.png" alt="" height="50" width="58"></span>
+              <!-- Add spacer, to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation. We hide it in small screens. -->
+              <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="index.html#about">About</a>
+                <a class="mdl-navigation__link" href="index.html#rush">Rush</a>
+                <a class="mdl-navigation__link" href="index.html#events">Events</a>
+                <a class="mdl-navigation__link" id="submenu">Members</a>
+                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                for="submenu">
+                  <li class="mdl-menu__item"><a class="mdl-navigation__link" href="index.html#brotherhood">Brothers</a></li>
+                  <li class="mdl-menu__item"><a class="mdl-navigation__link" href="alumni.html">Alumni</a></li>
+                </ul>
+              <a class="mdl-navigation__link" href="index.html#portfolio">Portfolio</a>
+              <a class="mdl-navigation__link" href="#contact">Contact</a>
+            </nav>
+          </div>
+          </header>
 
             <div class="mdl-typography--text-center header" id="cover">
                 <img src="assets/home/2018cover.jpg" style="width:100%; opacity: 0.9;">
@@ -94,7 +115,7 @@
                     <p align="right" ><a href="https://www.facebook.com/events/2136919089915626/" target="_blank" style="color:black">&lt;&lt;Learn More</a></p>
                 </div>
 
-                
+
     <h5 class="list-heading">Requirements</h5>
     <ul class="requirements" align="left">
         <li>&bull; You must attend at least 1 General Interest Meeting and 2 other events in order to be considered for a bid.</li>
