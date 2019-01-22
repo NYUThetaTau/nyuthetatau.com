@@ -15,9 +15,10 @@
 </head>
 
 <body>
+    <!-- Side Bar -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title"><a href="#cover"><img src="assets/logo.png" width="150" style="padding-top:10px;"></a></span>
+            <span class="mdl-layout-title"><a href="#cover"><img src="ttlogo.png" width="150" style="padding-top:10px;"></a></span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="#about">About</a>
                 <a class="mdl-navigation__link" href="#rush">Rush</a>
@@ -32,11 +33,34 @@
             </nav>
         </div>
 
+        <!-- Top bar -->
         <main class="mdl-layout__content">
+          <header class="mdl-layout__header" style="min-height: 90px">
+            <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <span class="mdl-layout-title"><img src="./ttlogo.png" alt="" height="50" width="58"></span>
+              <!-- Add spacer, to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation. We hide it in small screens. -->
+              <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="index.html#about">About</a>
+                <a class="mdl-navigation__link" href="index.html#rush">Rush</a>
+                <a class="mdl-navigation__link" href="index.html#events">Events</a>
+                <a class="mdl-navigation__link" id="submenu">Members</a>
+                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                for="submenu">
+                  <li class="mdl-menu__item"><a class="mdl-navigation__link" href="index.html#brotherhood">Brothers</a></li>
+                  <li class="mdl-menu__item"><a class="mdl-navigation__link" href="alumni.html">Alumni</a></li>
+                </ul>
+              <a class="mdl-navigation__link" href="index.html#portfolio">Portfolio</a>
+              <a class="mdl-navigation__link" href="#contact">Contact</a>
+            </nav>
+          </div>
+          </header>
 
 
             <div class="mdl-typography--text-center header" id="cover">
-                <img src="assets/home/2018cover.jpg" style="width:100%; opacity: 0.9;">
+                <img src="assets/events/1.jpg" style="width:100%; opacity: 0.9;">
             </div>
 
             <div class="mdl-typography--text-center description" id="about">
@@ -48,16 +72,54 @@
                     </div>
                     <div class="mdl-cell mdl-cell--2-col"></div>
                     <br/>
-                    <div class="mdl-grid pillars">
-                        <div class="mdl-cell mdl-cell--4-col"><i class="fa fa-heart fa-5x" aria-hidden="true"></i>
-                        </div>
-                        <div class="mdl-cell mdl-cell--4-col"><i class="fa fa-suitcase fa-5x" aria-hidden="true"></i>
-                        </div>
-                        <div class="mdl-cell mdl-cell--4-col"><i class="fa fa-gift fa-5x" aria-hidden="true"></i>
-                        </div>
-                    </div>
                 </div>
             </div>
+
+            <div class="mdl-typography--text-center description" style="background-color:rgb(245,245,245);">
+                <div class = "mdl-tabs mdl-js-tabs">
+                   <div class = "mdl-tabs__tab-bar">
+                      <a href = "#tab1-panel" class = "mdl-tabs__tab is-active" > <b>Brotherhood</b></a>
+                      <a href = "#tab2-panel" class = "mdl-tabs__tab"> <b>Professionalism</b> </a>
+                      <a href = "#tab3-panel" class = "mdl-tabs__tab"> <b>Service</b> </a>
+                   </div>
+
+                   <div class = "mdl-tabs__panel is-active tab-panel" id = "tab1-panel">
+                     <div class="mdl-grid">
+                         <div class="mdl-cell mdl-cell--2-col"></div>
+                         <div class="mdl-cell mdl-cell--8-col" id="brotherhoodpillar">
+                             <p> While Theta Tau focuses on cultivating professionalism amongst its members, we carry a large emphasis on unity and camaraderie to <b style="color:darkred">create memorable experiences</b> during our time at NYU . Our Brotherhood chairs have organized events where brothers can strengthen their bonds of friendship and create meaningful memories to look back on in the future. A few of the many events we have held in the past include potlucks, game nights, alumni dinners and excursions off-campus to hold team building activities. </p>
+                         </div>
+                     </div>
+                       <div class="mdl-cell--middle">
+                         <i class="fa fa-heart-o fa-5x" aria-hidden="true" style="padding-bottom: 20px"></i>
+                       </div>
+                   </div>
+
+                  <div class = "mdl-tabs__panel tab-panel" id = "tab2-panel">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-col"></div>
+                        <div class="mdl-cell mdl-cell--8-col" id="professionpillar">
+                            <p> As a professional engineering fraternity, our main goal is to <b style="color:darkred">provide resources and connections</b> for our members to use in establishing their career in whatever path they choose to take. Here at Theta Tau, we keep moving forward to whatever opportunities are before us, and we strive to help each other reach our own personal goals. In the previous semesters, we have hosted several information sessions, resume workshops, and alumni panels to benefit not only our members, but to everyone in our engineering community.  </p>
+                        </div>
+                    </div>
+                    <div class="mdl-cell--middle">
+                      <i class="fa fa-handshake-o fa-5x" aria-hidden="true" style="padding-bottom: 20px"></i>
+                    </div>
+                  </div>
+
+                  <div class = "mdl-tabs__panel tab-panel" id = "tab3-panel">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-col"></div>
+                        <div class="mdl-cell mdl-cell--8-col" id="servicepillar">
+                            <p> While it is important to focus on our personal growth, Theta Tau believes that it is just as crucial to <b style="color:darkred">give back to the community </b> that we reside in. This not only provides us new experiences to learn about, but also raises awareness of the greater social issues that can be found in our city. In the past, we have participated in volunteering opportunities such as packing lunch bags for the homeless, cleaning up local parks, and assembling blankets for animals in shelters. </p>
+                        </div>
+                    </div>
+                    <div class="mdl-cell--middle">
+                      <i class="fa fa-gift fa-5x" aria-hidden="true" style="padding-bottom: 20px"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             <div class="mdl-typography--text-center rush" id="rush">
                 <div class="section-header">Fall 2018 Rush</div>
@@ -91,7 +153,6 @@
                     </div>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <p align="right" ><a href="https://www.facebook.com/events/2136919089915626/" target="_blank" style="color:black">&lt;&lt;Learn More</a></p>
                 </div>
 
 
@@ -111,46 +172,46 @@
                 <br/>
                 <div class="slideshow-container">
 
-                    <div class="carousel2 fade">
-                        <img src="assets/events/1.jpg" style="width:100%">
+                    <div class="carousel2 fade mySlides">
+                        <img src="assets/events/1.jpg" style="width:75%">
                         <div class="eventsCaption" align="left">2018 Spring: Alumni Panel</div>
                     </div>
 
-                    <div class="carousel2 fade">
-                        <img src="assets/events/2.jpg" style="width:100%">
+                    <div class="carousel2 fade mySlides">
+                        <img src="assets/events/2.jpg" style="width:75%">
                         <div class="eventsCaption" align="left">2018 Spring: Grow an Idea into a Startup</div>
                     </div>
 
-                    <div class="carousel2 fade">
-                        <img src="assets/events/3.jpg" style="width:100%">
+                    <div class="carousel2 fade mySlides">
+                        <img src="assets/events/3.jpg" style="width:75%">
                         <div class="eventsCaption" align="left">2018 Spring: Post Grad Opportunities as an Engineer</div>
                     </div>
 
-                    <div class="carousel2 fade">
-                        <img src="assets/events/4.jpg" style="width:100%">
+                    <div class="carousel2 fade mySlides">
+                        <img src="assets/events/4.jpg" style="width:75%">
                         <div class="eventsCaption" align="left">2017 Fall: Alumni Dinner</div>
                     </div>
 
-                    <div class="carousel2 fade">
-                        <img src="assets/events/5.jpg" style="width:100%">
+                    <div class="carousel2 fade mySlides">
+                        <img src="assets/events/5.jpg" style="width:75%">
                         <div class="eventsCaption" align="left">2017 Fall: Dance Workshop</div>
                     </div>
 
-                    <div class="carousel2 fade">
-                        <img src="assets/events/6.jpg" style="width:100%">
-                        <div class="eventsCaption" align="left">2017 Fall: Breast Cancer Walk</div>
+                    <div class="carousel2 fade mySlides">
+                        <img src="assets/events/6.jpg" style="width:75%">
+                        <div class= "eventsCaption" align="left">2017 Fall: Breast Cancer Walk</div>
                     </div>
-                    <div class="carousel2 fade">
-                        <img src="assets/events/7.jpg" style="width:100%">
+                    <div class="carousel2 fade mySlides">
+                        <img src="assets/events/7.jpg" style="width:75%">
                         <div class="eventsCaption" align="left">2017 Fall: Theta Tau Northeast Regional Conference</div>
                     </div>
-                    <div class="carousel2 fade">
-                        <img src="assets/events/8.jpg" style="width:100%">
+                    <div class="carousel2 fade mySlides">
+                        <img src="assets/events/8.jpg" style="width:75%">
                         <div class="eventsCaption" align="left">2017 Fall: Hashtag Lunchbag Service</div>
                     </div>
 
-                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
-                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <!-- <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a> -->
 
                 </div>
 
@@ -162,7 +223,7 @@
                     <hr>
                     <div class="mdl-grid">
                         <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
-                            <div class="dialog-image" id="fangni"><img src="assets/brothers/FangNi_Zeng.jpg" class="portrait">
+                            <div class="dialog-image" id="fangni"><img src="YZ.jpg" class="portrait">
                                 <span class="name">Fang Ni Zeng</span>
                                 <span class="position">Regent</span>
                             </div>
@@ -170,7 +231,7 @@
                                 <h3 class="mdl-dialog__title">Fang Ni Zeng</h3> Regent
                                 <div class="mdl-dialog__content">
                                     <p>
-                                        <img src="assets/brothers/FangNi_Zeng.jpg" class="mdl-portrait">
+                                        <img src="YZ.jpg" class="mdl-portrait">
                                     </p>
                                     <p class="bio">
                                         Fang Ni is currently a senior majoring in Mechanical Engineering with an intended minor in Business Studies. She works in the Applied Micro-bioengineering Lab, focusing on biomechanics, biosystems, and bioengineering in cancer research. She is not only interested in the application of her knowledge in medical devices, but also dreams about working in Disney as an Imagineer. In her free time, she enjoys creating artworks and working out in the gym.
@@ -185,7 +246,7 @@
                             </dialog>
                         </div>
                         <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
-                            <div class="dialog-image" id="meggie"><img src="assets/brothers/Meggie_Ye.jpg" class="portrait">
+                            <div class="dialog-image" id="meggie"><img src="YZ.jpg" class="portrait">
                                 <span class="name">Meggie Ye</span>
                                 <span class="position">Vice Regent</span>
                             </div>
@@ -193,7 +254,7 @@
                                 <h3 class="mdl-dialog__title">Meggie Ye</h3> Vice Regent
                                 <div class="mdl-dialog__content">
                                     <p>
-                                        <img src="assets/brothers/Meggie_Ye.jpg" class="mdl-portrait">
+                                        <img src="YZ.jpg" class="mdl-portrait">
                                     </p>
                                     <p class="bio">
                                         Meggie is a third year student majoring in Mechanical Engineering. She is passionate about learning and believes that hard work and compassion will take her far. She is a born and raised New Yorker and thoroughly appreciates NYU's diverse student body. She enjoys hands-on projects and spends a lot of time in the NYU Makerspace. Her interests include but are not limited to volleyball, lacrosse, cooking, eating, and arts and crafts.
@@ -208,12 +269,14 @@
                             </dialog>
                         </div>
                         <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
-                            <div class="dialog-image" id="tiffany"><img src="assets/brothers/Tiffany_Yu.jpg" class="portrait">
+                            <div class="dialog-image" id="tiffany"><img src="YZ.jpg" class="portrait">
                                 <span class="name">Tiffany Yu</span>
                                 <span class="position">Corresponding Secretary</span>
                             </div>
                             <dialog class="mdl-dialog dialog-tiffany">
                                 <h3 class="mdl-dialog__title">Tiffany Yu</h3> Corresponding Secretary
+
+                                <!-- Slide in linkedIn description box -->
                                 <div class="mdl-dialog__content">
                                     <p>
                                         <img src="assets/brothers/Tiffany_Yu.jpg" class="mdl-portrait">
@@ -225,6 +288,7 @@
                                         </i> LinkedIn
                                     </a>
                                 </div>
+
                                 <div class="mdl-dialog__actions">
                                     <button type="button" class="mdl-button">x</button>
                                 </div>
@@ -672,7 +736,7 @@
                             <div class="dialog-image" id="tim"><img src="assets/brothers/Timothy_DLR.jpg" class="portrait">
                                 <span class="name">Timothy De Los Reyes</span>
                                 <span class="major">BS in Mechanical Engineering </span>
-                                <span class="gradyear">Class of 2019</span>
+                                <span class="gradyear">Class of 2020</span>
                             </div>
                             <dialog class="mdl-dialog dialog-tim">
                                 <h3 class="mdl-dialog__title">Timothy De Los Reyes</h3>
@@ -1116,7 +1180,7 @@
                                 	<span class="gradyear">Class of 2021</span>
                                 </div>
                                 <dialog class="mdl-dialog dialog-brittany">
-                                    <h3 class="mdl-dialog__title">Brittany Ng</h3> Webmaster
+                                    <h3 class="mdl-dialog__title">Brittany Ng</h3> Risk Management
                                     <div class="mdl-dialog__content">
                                         <p>
                                             <img src="assets/brothers/Brittany_Ng.jpg" class="mdl-portrait">
@@ -1208,6 +1272,307 @@
                           </div>
                         </div>
                     </div>
+
+            <div class="class">
+                    <h2 class="class-name">Theta</h2>
+                    <hr>
+                    <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="kat"><img src="YZ.jpg" class="portrait">
+                            <span class="name">Katrina Mae Paredes</span>
+                            <span class="major">BS in Computer Engineering</span>
+                            <span class="gradyear">Class of 2021</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-kat">
+                            <h3 class="mdl-dialog__title">Katrina Mae Paredes</h3> Public Relations
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="YZ.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Katrina (Kat for short) is a sophomore, currently studying Computer Engineering. She has a passion for digital design and hopes to put her skills towards an Integrated Digital Media minor. In her free time, you can catch her writing, learning new tunes on the guitar, or spending time with her friends. Don't be afraid to approach her as she is always down to talk if you need anything!
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/katrina-paredes-60b7a5158/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="claudia"><img src="YZ.jpg" class="portrait">
+                            <span class="name">Claudia Shao</span>
+                            <span class="major">BS in Integrated Digital Media </span>
+                            <span class="gradyear">Class of 2022</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-claudia">
+                            <h3 class="mdl-dialog__title">Claudia Shao</h3> Fundraising Chair
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="YZ.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Clau·di·a [claw-dee-ahhh]
+                                    (Proper noun)
+                                    Beijing-transplant, salad-shaker, maybe-artist, your new friend
+
+                                    Claudia is currently studying Integrated Digital Media and plans to minor in Producing at Tisch. She loves visual and performing arts and hopes to pursue a career in the entertainment/media industry. Claudia is not hard to find, usually buried by art supplies or napping on one of the orange chairs in Makerspace. Some of her hobbies include horseback riding, snorkeling, visiting museums, and daydreaming.
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/claudia-shao-7a9758b4/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="julie"><img src="assets/brothers/Justin_Huang.jpg" class="portrait">
+                            <span class="name">Julie Ryoo</span>
+                            <span class="major">BS in Mechanical Engineering</span>
+                            <span class="gradyear">Class of 2022</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-julie">
+                            <h3 class="mdl-dialog__title">Julie Ryoo</h3> Brotherhood Chair
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="assets/brothers/Justin_Huang.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Julie is a first-year student studying mechanical engineering. Outside of school, she also likes to watch Studio Ghibli or Disney movies. You can often find her with boba in her hand.
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/julie-hyo-jeong-ryoo-700176172/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="brandon"><img src="YZ.jpg" class="portrait">
+                            <span class="name">Brandon Chin</span>
+                            <span class="major">BS in Mechanical Engineering</span>
+                            <span class="gradyear">Class of 2022</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-brandon">
+                            <h3 class="mdl-dialog__title">Brandon Chin</h3> Recruitment Chair
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="YZ.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Brandon is a first year studying Mechanical Engineering. He enjoys playing frisbee in his free time and is always down to throw. He is also very passionate about The Office and has watched it multiple times. He is a ramen enthusiast and is always searching for the best bowl of ramen.
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/brandondchin/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="karen"><img src="assets/brothers/Jimmy_Lauchoy.jpg" class="portrait">
+                            <span class="name">Karen Zhou</span>
+                            <span class="major">BS in Computer Science</span>
+                            <span class="gradyear">Class of 2022</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-karen">
+                            <h3 class="mdl-dialog__title">Karen Zhou</h3> Professional Chair
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="assets/brothers/Jimmy_Lauchoy.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Karen is a freshman but soon you might see her hanging out at one of the rooftops. She’s going to be a CS student minoring in Business Studies and IDM. Her interests include mathematics, coding and entrepreneurship etc. She loves supermarkets, nonfiction books, running, jazz, movie soundtracks and maybe Stephen Colbert. You will most likely find her on main campus and inside MoMA.
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/karenzhou0/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="ethan"><img src="YZ.jpg" class="portrait">
+                            <span class="name">Ethan Yao</span>
+                            <span class="major">BS in Computer Science</span>
+                            <span class="gradyear">Class of 2021</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-ethan">
+                            <h3 class="mdl-dialog__title">Ethan Yao</h3> Brotherhood Chair
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="YZ.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Ethan is a sophomore studying computer science and minoring in game engineering. You can usually find him sleeping in Dibner or Bobst, on his phone at 404, or lounging around in Othmer or Alumni hall. He's usually down to do anything especially getting food or bubble tea (large mango green-tea no ice no sugar with coconut jelly pls).
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/yao-ethan/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="sahana"><img src="assets/brothers/Danny_Lin.jpg" class="portrait">
+                            <span class="name">Sahana Sripadanna</span>
+                            <span class="major">BS in Integrated Digital Media</span>
+                            <span class="gradyear">Class of 2022</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-sahana">
+                            <h3 class="mdl-dialog__title">Sahana Sripadanna</h3> Historian
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="assets/brothers/Danny_Lin.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Sahana is a first year majoring in Integrated Digital Media. She is interested in learning new ways to better communicate and tell a story using technology, using anything from video editing to coding. As a pop culture enthusiast, she has mastered the art of binge watching and loves watching movies and TV shows. In her free time, she enjoys napping, practicing Indian classical dance, and gardening, but she's happiest when learning something new.
+
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/sahana-sripadanna-304517117/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="phoebe"><img src="assets/brothers/Johnny_Zhang.jpg" class="portrait">
+                            <span class="name">Phoebe Zhu</span>
+                            <span class="major">BS in Electrical Engineering</span>
+                            <span class="gradyear">Class of 2022</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-phoebe">
+                            <h3 class="mdl-dialog__title">Phoebe Zhu</h3> Recruitment and Public Relations Chair
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="assets/brothers/Johnny_Zhang.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Phoebe is a freshman studying electrical engineering. She also does robotics because she wants to explore more about her major. Her favorite things include alpacas, food, and time spent with friends. In her free time, she enjoys playing sports and listening to a variety of musics.
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/phoebe-zhu-325163142/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="joshua"><img src="assets/brothers/Amanda_Zhou.jpg" class="portrait">
+                            <span class="name">Joshua Lee</span>
+                            <span class="major">BS in Mathematics</span>
+                            <span class="gradyear">Class of 2022</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-joshua">
+                            <h3 class="mdl-dialog__title">Joshua Lee</h3>
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="assets/brothers/Amanda_Zhou.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Joshua is currently a freshman majoring in mathematics. He loves anything related to mathematics or steak. In his free time, he loves to read biographies or Japanese/Chinese light novels depending on the vibe in Dibner library. In the future, he hopes to expand his knowledge of mathematical proofs and theorems.
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/joshua-lee-b20341172/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="aaron"><img src="assets/brothers/Meggie_Ye.jpg" class="portrait">
+                            <span class="name">Aaron Min</span>
+                            <span class="major">BS in Computer Engineering</span>
+                            <span class="gradyear">Class of 2022</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-aaron">
+                            <h3 class="mdl-dialog__title">Aaron Min</h3> Historian
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="assets/brothers/Meggie_Ye.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Aaron is a freshman from Long Island, New York. He is pursuing a degree in Computer Engineering and plans to minor in Business Studies. He is currently part of the First Year Entrepreneurship Recruits program in the NYU Innovention Society. Aaron aims to go into the tech industry as a hardware engineer when he graduates. His favorite pastimes include hanging out with friends, photography, and watching YouTube.
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/aaron-min-42a1b4155/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="mo"><img src="assets/brothers/Meggie_Ye.jpg" class="portrait">
+                            <span class="name">Mohammed Ajao</span>
+                            <span class="major">BS in Computer Science</span>
+                            <span class="gradyear">Class of 2022</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-mo">
+                            <h3 class="mdl-dialog__title">Mohammed Ajao</h3> Webmaster
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="assets/brothers/Meggie_Ye.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Moe is an eccentric and Computer Science major with a passion for food, anime, games, the violin, art and a wide range of music. If there's an anime, he's watched it. Other than being a proud nerd, Moe also commits his free time to the gym, making comics, reading Light Novels. and writing books. He's free to talk about any topics throughout the year.
+                                    Professionally, Moe freelances as a web developer and designer. He enjoys editing videos, marketing, and engaging in fiscal operations. You can find him at the Snack Lounge at Dibner Library.
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/mohammed-a-6663a813b/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone graybox">
+                        <div class="dialog-image" id="shreya"><img src="assets/brothers/Meggie_Ye.jpg" class="portrait">
+                            <span class="name">Shreya Thakur</span>
+                            <span class="major">BS in Business and Technology Management </span>
+                            <span class="gradyear">Class of 2022</span>
+                        </div>
+                        <dialog class="mdl-dialog dialog-shreya">
+                            <h3 class="mdl-dialog__title">Shreya Thakur</h3>
+                            <div class="mdl-dialog__content">
+                                <p>
+                                    <img src="assets/brothers/Meggie_Ye.jpg" class="mdl-portrait">
+                                </p>
+                                <p class="bio">
+                                    Shreya is a BTM Major from Edison NJ. She really likes music and in her free time she likes to play guitar and uke.
+                                </p>
+                                <a class="linkedin" href="https://www.linkedin.com/in/shreya-thakur-b09022172/" target="_blank">
+                                  </i> LinkedIn
+                                </a>
+                            </div>
+                            <div class="mdl-dialog__actions">
+                                <button type="button" class="mdl-button">x</button>
+                            </div>
+                        </dialog>
+                    </div>
+                    </div>
                     <!-- <button id="rosterbutton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
             Full Roster
           </button> -->
@@ -1219,51 +1584,51 @@
             <div class="mdl-typography--text-center portfolio" id="portfolio">
                 <div class="section-header">Portfolio</div>
                 <div class="mdl-grid">
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/aecom.jpg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/autodesk.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
                     <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><span><img src="assets/portfolio/barclays.jpg" class="company-logo"></span>
                     </div>
                     <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/boa.jpeg" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/conedison.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
                     <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/cummins.png" height ="55" fdsclass="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/ephemeral.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
                     <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/facebook.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/goldman_sachs.jpg" height ="55" fdsclass="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" height ="55" fdsclass="company-logo">
                     </div>
                     <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/ibm.jpg" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/google.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/huawei.jpg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/jacobs.jpg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/jpmorgan.jpg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/lockheed_martin.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/microsoft.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/mta.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/nasa.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/northrop_grumman.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/ouvos.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/tdbank.jpg" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/turner.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png"class="company-logo">
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="assets/portfolio/warbyparker.png" class="company-logo">
+                    <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-phone graybox"><img src="md.png" class="company-logo">
                     </div>
                 </div>
             </div>
@@ -1288,7 +1653,9 @@
                     </ul>
                     <p class="copyright">
                         &copy; 2018 NYU Theta Tau | <a href="http://thetatau.org/" target="_blank">Theta Tau Nationals
-</p>
+                    </p>
+                    </div>
+
                 </div>
             </section>
         </main>
@@ -1299,7 +1666,7 @@
     <script src="js/carousel.js"></script>
     <script src="js/carousel2.js"></script>
     <script src="js/video-adjust.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/eventSlideshow.js"></script>
     <script src="js/dropdown.js"></script>
 </body>
 
