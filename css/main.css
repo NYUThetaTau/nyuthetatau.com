@@ -423,5 +423,5 @@ hr {
 }
 
 .mdl-layout--fixed-drawer>.mdl-layout__content {
-  margin-left: 0;
+  margin-left: 0 !important;
 }
