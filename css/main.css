@@ -432,3 +432,55 @@ hr {
     margin-top: 60px;
   }
 }
+
+#brotherhood .mdl-dialog, #alumni .mdl-dialog {
+  top: 50%;
+  bottom: 50%;
+  overflow-y: hidden;
+}
+
+.avatar-img, .dialog-image {
+  max-height: 250px;
+  overflow-y: hidden;
+}
+
+#brotherhood .bio, #alumni .bio {
+  max-height: 150px;
+  overflow-y: scroll;
+  padding: 0 10px;
+  text-align: left;
+}
+
+#brotherhood .mdl-dialog .mdl-dialog__actions, #alumni .mdl-dialog .mdl-dialog__actions {
+  padding: 0;
+  top: 0;
+  position: absolute;
+  right: 0;
+}
+
+#brotherhood .mdl-dialog .mdl-dialog__actions .mdl-button, #alumni .mdl-dialog .mdl-dialog__actions .mdl-button {
+  padding-right: 0;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+@media only screen and (min-width: 650px) {
+  .avatar-img {
+    max-height: 270px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .avatar-img {
+    max-height: 290px;
+  }
+}
