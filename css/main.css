@@ -94,6 +94,7 @@ video {
   width: 560px;
   height: 315px;
   max-width: 100%;
+  margin-bottom: 30px;
 }
 
 .events {
@@ -424,4 +425,10 @@ hr {
 
 .mdl-layout--fixed-drawer>.mdl-layout__content {
   margin-left: 0 !important;
+}
+
+@media only screen and (min-width: 1025px) {
+  #cover {
+    margin-top: 60px;
+  }
 }
